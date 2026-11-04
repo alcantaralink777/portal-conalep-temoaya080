@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual - CONALEP Plantel Temoaya</title>
+    
+    <!-- Tipografía Moderna y Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Hoja de Estilos General Unificada -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <!-- Fondo de malla tecnológica -->
+    <div class="bg-mesh"></div>
+
+    <!-- Redes Sociales Flotantes -->
+    <div class="social-icons-float">
+        <a href="https://www.facebook.com/ConalepTemoaya080?mibextid=ZbWKwL" target="_blank" class="social-icon facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://whatsapp.com/channel/0029VaXkV3gK0IBemLqQGA2Q" target="_blank" class="social-icon whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://x.com/ConalepTemoaya?t=_tFDwOR5EO-kMRiu1jZuSw&s=08" target="_blank" class="social-icon x-icon" title="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/conaleptemoaya080/" target="_blank" class="social-icon instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <!-- Navbar Floating Glassmorphism -->
+    <nav class="navbar-pro">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="lobo-container" style="overflow: hidden; padding: 2px;">
+                    <img src="../imagenes/lobo1.jpeg" alt="Lobo CONALEP" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+                </div>
+                <div>
+                    <span class="brand-main">CONALEP</span>
+                    <span class="brand-sub">Plantel Temoaya</span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="../INICIO.htm" class="nav-link">Inicio</a>
+                <a href="bibliotecas_en_linea.htm" class="nav-link activo">Biblioteca Virtual</a>
+                <a href="../paginas/credencial.htm" class="nav-link">Trámites</a>
+                <a href="../paginas/contacto.htm" class="nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <main class="library-container">
+        
+        <div class="library-header">
+            <h1>Repositorio Completo de Guías y Enlaces</h1>
+            <div style="width: 60px; height: 4px; background-color: var(--brand-accent); margin: 0 auto 15px auto; border-radius: 2px;"></div>
+            <p>Acceso total al inventario exhaustivo de guías pedagógicas, normativas y repositorios externos oficiales por semestre.</p>
+        </div>
+
+        <!-- Pestañas de Semestres -->
+        <div class="semestre-tabs">
+            <button class="tab-btn active" onclick="cambiarSemestre('sem2', event)"><i class="fas fa-book"></i> 2do Semestre</button>
+            <button class="tab-btn" onclick="cambiarSemestre('sem3', event)"><i class="fas fa-book"></i> 3ro Semestre</button>
+            <button class="tab-btn" onclick="cambiarSemestre('sem4', event)"><i class="fas fa-book"></i> 4to Semestre</button>
+            <button class="tab-btn" onclick="cambiarSemestre('sem5', event)"><i class="fas fa-book"></i> 5to Semestre</button>
+            <button class="tab-btn" onclick="cambiarSemestre('semAvanzado', event)"><i class="fas fa-folder-open"></i> Módulos Especializados</button>
+        </div>
+
+        <!-- ================= SEM2 ================= -->
+        <div id="sem2" class="tab-content active">
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Emprendimiento e Innovación</h3>
+                <div class="links-grid">
+                    <a href="https://utncomunicacionprofesional.files.wordpress.com/2012/04/allanpease-ellenguajedelcuerpo.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Guía Lenguaje del Cuerpo - Allan Pease</span></a>
+                    <a href="https://repositoriodigital.ipn.mx/bitstream/123456789/25649/1/MODELO-DE-NEGOCIO-SOSTENIBLE.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Propuesta de un Modelo de Negocio Sostenible para Emprendedores</span></a>
+                    <a href="https://cdn01.pucp.education/btpucp/2019/07/19163243/manual_del_usuario1.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Manual de Usuario PUCP</span></a>
+                    <a href="http://gc.scalahed.com/recursos/files/r161r/w24709w/La_importancia_de_la_imagen_personal.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>La Importancia de la Imagen Personal</span></a>
+                    <a href="https://www.gob.mx/impi" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Instituto Mexicano de la Propiedad Industrial (IMPI)</span></a>
+                    <a href="https://www.inadem.gob.mx/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>INADEM (Histórico de Emprendedores)</span></a>
+                    <a href="https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Objetivos de Desarrollo Sostenible (ONU)</span></a>
+                    <a href="https://www.eumed.net/ce/2007c/rcc-0710.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Revista Eumed - Desarrollo Sostenible</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Manejo de Aplicaciones por Medios Digitales</h3>
+                <div class="links-grid">
+                    <a href="https://es.wikiversity.org/wiki/Herramientas_de_edici%C3%B3n_de_imagen" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Herramientas de Edición de Imagen (Wikiversity)</span></a>
+                    <a href="https://www.digikey.com.mx/es/resources/design-tools/schemeit" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Diagramador de Procesos SchemeIt</span></a>
+                    <a href="https://slideplayer.es/slide/3500849/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-powerpoint"></i><span>Presentación Gestión de Proyectos Software</span></a>
+                    <a href="https://www.inf.utfsm.cl/~guerra/publicaciones/Gestion%20de%20Proyectos%20de%20Software.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Gestión de Proyectos de Software (PDF)</span></a>
+                    <a href="https://www.redalyc.org/articulo.oa?id=66612870011" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>La Ingeniería de Requerimientos en Proyectos de Software (Redalyc)</span></a>
+                    <a href="http://www.scielo.org.mx/scielo.php?script=sci_arttext&amp;pid=S0187-358X2012000300003" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Ingeniería de Requerimientos (SciELO)</span></a>
+                    <a href="https://www.ciudadano2cero.com/como-crear-una-pagina-web-en-html/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Guía: Cómo crear una página web en HTML</span></a>
+                    <a href="http://www.cobat.edu.mx/wp-content/uploads/sites/79/2012/03/Elaboraci%C3%B3n-de-paginas-web.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Elaboración de Páginas Web (COBAT)</span></a>
+                    <a href="https://es.scribd.com/document/2539650/manual-microsoft-project-2003" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-book"></i><span>Manual Microsoft Project 2003</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería Propedéutica</h3>
+                <div class="links-grid">
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="https://www.cndh.org.mx/sites/default/files/doc/Programas/VIH/Leyes%20y%20normas%20y%20reglamentos/Norma%20Oficial%20Mexicana/NOM-087-SEMARNAT-SSA1-2002%20Proteccion%20ambiental-salud.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>NOM-087 Protección Ambiental y Salud</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5272787&amp;fecha=15/10/2012" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Normas Oficiales de Salud</span></a>
+                    <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5312523&amp;fecha=02/09/2013" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Modificación a Normas Oficiales</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5278341&amp;fecha=21/11/2012" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Lineamientos de Salud</span></a>
+                    <a href="https://fortecnica081.files.wordpress.com/2012/01/enfermeriapropeok.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Guía Enfermería Propedéutica (PDF)</span></a>
+                    <a href="http://www.tuningal.org/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Proyecto Tuning</span></a>
+                    <a href="http://www.cpe.salud.gob.mx/site3/publicaciones/docs/codigo_etica.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Código de Ética para Personal de Salud</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle_popup.php?codigo=5272787" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Normas Oficiales de Salud (versión completa)</span></a>
+                    <a href="https://www.cndh.org.mx/DocTR/2016/JUR/A70/01/JUR-20170331-NOR41.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Documentación Jurídica CNDH (Normativa)</span></a>
+                    <a href="https://enfermeriaparaelcambio.files.wordpress.com/2008/10/manual_parte1.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Manual de Enfermería Parte 1</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Identificación de la Estructura y Función del Cuerpo Humano</h3>
+                <div class="links-grid">
+                    <a href="http://dipsa.com/ClanDunant/Textos/TUM%20-%20Anatomia%20Humana%20Martini.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Anatomía Humana - Martini (PDF)</span></a>
+                    <a href="https://www.studocu.com/es-mx/document/universidad-autonoma-de-nayarit/antropologia-medica/anatomia-y-fisiologia-humana-de-tortora/4327517" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Anatomía y Fisiología Humana - Tortora (Studocu)</span></a>
+                    <a href="https://www.uaa.mx/centros/cem/programas/p2015/6to/complementarias/Anatomia%20y%20Fisiologia%20Humana.doc.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Anatomía y Fisiología Humana (UAA PDF)</span></a>
+                    <a href="http://www.laenfermeria.es/apuntes.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>APUNTES de tu portal de apuntes y recursos de enfermeria</span></a>
+                    <a href="https://www.portalprogramas.com/bonelab/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>BoneLab - Simulador de Anatomía Ósea</span></a>
+                    <a href="https://www.academia.edu/36607543/Anatomia_y_fisiologia_humana_de_tortora" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Anatomía y Fisiología Humana (Academia.edu)</span></a>
+                    <a href="https://www.portalprogramas.com/bonelab/descargar" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Descargar BoneLab en Español</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= SEM3 ================= -->
+        <div id="sem3" class="tab-content">
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería Ambulatoria y Hospitalaria</h3>
+                <div class="links-grid">
+                    <a href="http://lum2010regleg.blogspot.com/2009/10/organismos-de-seguridad-social.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>RÉGIME LEGAL DE SEGURIDAD SOCIAL: ORGANISMOS DE SEGURIDAD SOCIAL</span></a>
+                    <a href="https://leyco.org/mex/fed/125.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>Ley Federal del Trabajo</span></a>
+                    <a href="https://docplayer.es/4483173-Modelo-de-atencion-integral-a-las-pvvs-en-el-sistema-publico-de-salud-modelo-de-atencion-integral-a-las-pvvs-en-el-sistema-publico-de-salud.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Modelo de Atención Integral a las PVVS</span></a>
+                    <a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/92_230421.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Ley del Seguro Social</span></a>
+                    <a href="http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Ley_del_Instituto_de_Seguridad_y_Servicios_Sociales_de_los_Trabajadores.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Ley del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado</span></a>
+                    <a href="http://www.dof.gob.mx/normasOficiales/4822/salud4a13_C/salud4a13_C.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>salud4a13_C</span></a>
+                    <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5312523&amp;fecha=02/09/2013" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5312523 (02/09/2013)</span></a>
+                    <a href="https://www.sefh.es/bibliotecavirtual/ops/afambulatorio.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Atencion farmaceutica al paciente ambulatorio</span></a>
+                    <a href="https://enfermeriaparaelcambio.files.wordpress.com/2008/10/manual_parte1.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Manual de Enfermería Parte 1</span></a>
+                    <a href="https://maludice7.com/tecnicas-y-procedimientos-de-enfermeria/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>MANUAL DE TÉCNICAS Y PROCEDIMIENTOS DE ENFERMERÍA</span></a>
+                    <a href="https://www.leyfederaldeltrabajo.com.mx/titulo-sexto/capitulo-xii.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>Ley Federal del Trabajo Trabajo a domicilio - Capitulo XII</span></a>
+                    <a href="https://www.ecorfan.org/manuales/manuales_nayarit/Tecnicas%20y%20procedimientos%20para%20el%20cuidado%20de%20enfermer%C3%ADa%202.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Tecnicas y procedimientos para el cuidado de enfermería 2.pdf</span></a>
+                    <a href="https://studylib.es/doc/1976475/modelo-de-atenci%C3%B3n-integral-a-las-pvvs-en-el" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Modelo de Atención Integral a las PVVS en el</span></a>
+                    <a href="https://www.cndh.org.mx/DocTR/2016/JUR/A70/01/JUR-20170331-NOR10.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>NOM-005-SSA3-2010 Infraestructura y Equipamiento (Ambulatorios)</span></a>
+                    <a href="https://www.cndh.org.mx/DocTR/2016/JUR/A70/01/JUR-20170331-NOR41.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Documentación Jurídica CNDH (Normativa)</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería en el Primer Nivel de Atención</h3>
+                <div class="links-grid">
+                    <a href="http://www.madrid.org/cs/Satellite?blobcol=urldata&amp;blobheader=application%2Fpdf&amp;blobheadername1=Contentdisposition&amp;blobheadername2=cadena&amp;blobheadervalue1=filename%3DPapel+Enfermer%C3%ADa+OK.pdf&amp;blobheadervalue2=language%3Des%26site%3DPortalSalud&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1220445005584&amp;ssbinary=true" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Maqueta Enfermería ENTERA CAMBIOS 2.cdr</span></a>
+                    <a href="https://saluddesdelaotraorillas.com/2020/07/29/las-funciones-esenciales-de-la-salud-publica-las-fesp/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Funciones Esenciales de la Salud Pública (FESP)</span></a>
+                    <a href="https://www.who.int/es/news-room/fact-sheets/detail/family-planning-contraception" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Planificación familiar</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5321934&amp;fecha=13/11/2013" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5321934 (13/11/2013)</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5270654&amp;fecha=28/09/2012" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5270654 (28/09/2012)</span></a>
+                    <a href="http://cenetec-difusion.com/gpc-sns/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>CATÁLOGO MAESTRO – GUÍAS DE PRÁCTICA CLÍNICA</span></a>
+                    <a href="https://mpsp.webs.uvigo.es/rev01-1/Ottawa-01-1.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Carta de Ottawa-01-1</span></a>
+                    <a href="http://www.consulta.vhs.com.mx/nom/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>LISTADO DE NORMAS OFICIALES MEXICANAS</span></a>
+                    <a href="https://salud.edomex.gob.mx/isem/tamiz_neonatal" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Tamiz Metabólico Neonatal</span></a>
+                    <a href="https://www.paho.org/hq/dmdocuments/2012/Alma-Ata-1978Declaracion.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Declaración de Alma-Ata (OPS PDF)</span></a>
+                    <a href="http://www.madrid.org/cs/Satellite?blobcol=urldata&amp;blobheader=application%2Fpdf&amp;blobheadername1=Content-disposition&amp;blobheadername2=cadena&amp;blobheadervalue1=filename%3DPapel+Enfermer%C3%ADa+OK.pdf&amp;blobheadervalue2=language%3Des%26site%3DPortalSalud&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1220445005584&amp;ssbinary=true" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Maqueta Enfermería ENTERA CAMBIOS 2.cdr</span></a>
+                    <a href="https://www.gob.mx/cms/uploads/attachment/file/10206/2_carta_de_ottawa.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>OttawaCharterSp.PDF</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Identificación del Cuerpo Humano por Aparatos y Sistemas</h3>
+                <div class="links-grid">
+                    <a href="https://www.udocz.com/mx/read/47896/anatomia-humana-6ta-edicion-martini-timmons-y-tallitsch" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-book"></i><span>Anatomía humana 6ta Edición Martini Timmons y Tallitsch</span></a>
+                    <a href="https://www.academia.edu/36607543/Anatomia_y_fisiologia_humana_de_tortora" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Anatomía y Fisiología Humana (Academia.edu)</span></a>
+                    <a href="http://www.laenfermeria.es/apuntes.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>APUNTES de tu portal de apuntes y recursos de enfermeria</span></a>
+                    <a href="https://www.portalprogramas.com/bonelab/descargar" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Descargar BoneLab en Español</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Identificación del Proceso Salud - Enfermedad</h3>
+                <div class="links-grid">
+                    <a href="https://www.scielo.br/j/csp/a/8bsQRMHDrQqWspcjLfhB8Qh/?format=pdf&amp;lang=es" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Proceso Salud - Enfermedad (SciELO PDF)</span></a>
+                    <a href="https://ifdcsanluis-slu.infd.edu.ar/sitio/upload/navarro.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>navarro</span></a>
+                    <a href="https://concepto.de/salud-segun-la-oms/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Salud - Concepto, componentes y salud ocupacional</span></a>
+                    <a href="https://rua.ua.es/dspace/bitstream/10045/11468/1/1.Concepto%20salud%20y%20salud%20p%c3%bablica.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>La salud y sus determinantes</span></a>
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="http://preventivaysocial.webs.fcm.unc.edu.ar/files/2014/04/MPyS-1-Unidad-1-Determinantes-de-la-Salud-V-2013.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Unidad 1</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5120943&amp;fecha=20/11/2009" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5120943 (20/11/2009)</span></a>
+                    <a href="http://www.salud.gob.mx/unidades/cdi/nom/032ssa202.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>NORMA Oficial Mexicana NOM</span></a>
+                    <a href="https://coneschaco.org.ar/wp-content/uploads/2021/03/salud07.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Microsoft Word - Edición 1.doc</span></a>
+                    <a href="https://www.insp.mx/lineas-de-investigacion.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Líneas de Investigación</span></a>
+                    <a href="https://www.gob.mx/salud/documentos/programa-sectorial-de-salud-2020-2024" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>PROGRAMA Sectorial de Salud 2020-2024</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Terapéutica Farmacológica</h3>
+                <div class="links-grid">
+                    <a href="https://studylib.es/doc/7572643/los-medicamentos-seg%C3%BAn-la-legislaci%C3%B3n-mexicana" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Los medicamentos según la legislación mexicana</span></a>
+                    <a href="http://www.salud.gob.mx/unidades/cdi/nom/220ssa102.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>NORMA Oficial Mexicana NOM</span></a>
+                    <a href="https://www.pisa.com.mx/publicidad/portal/enfermeria/manual/4_1_2.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>4_1_2 Administración de Medicamentos</span></a>
+                    <a href="https://www.monografias.com/trabajos73/responsabilidad-legal-profesional-enfermeria/responsabilidad-legal-profesional-enfermeria.shtml" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Responsabilidad Legal del Profesional de Enfermería (Monografías)</span></a>
+                    <a href="http://www.imss.gob.mx/sites/all/statics/guiasclinicas/712GER.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>712GER</span></a>
+                    <a href="http://www.csg.gob.mx/descargas/pdf/priorizacion/cuadro-basico/med/catalogo/2016/EDICION_2016_MEDICAMENTOS.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>EDICION_2016_MEDICAMENTOS.pdf</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= SEM4 ================= -->
+        <div id="sem4" class="tab-content">
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería en Salud Mental y Psiquiatría</h3>
+                <div class="links-grid">
+                    <a href="https://saludextremadura.ses.es/filescms/smex/uploaded_files/CustomContentResources/Planes_de_Cuidados_Enfermeros_en_Salud_Mental.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>MAQUETA OK.indd</span></a>
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="https://www.psicoactiva.com/cie10/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Clasificación de Trastornos Mentales según el CIE 10</span></a>
+                    <a href="http://estamoslocospuntocom.blogspot.com/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Salud mental y Enfermería</span></a>
+                    <a href="http://www.dof.gob.mx/normasOficiales/5805/salud3a11_C/salud3a11_C.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>NOM-025-SSA2-2014 Servicios de Salud Mental</span></a>
+                    <a href="https://es.scribd.com/doc/49115012/Que-es-el-Modelo-Miguel-Hidalgo" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-book"></i><span>Qué Es El Modelo Miguel Hidalgo</span></a>
+                    <a href="https://www.gob.mx/cms/uploads/attachment/file/11918/Salud_Mental.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Salud Mental</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería Médico-Quirúrgica y de Especialidad</h3>
+                <div class="links-grid">
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="https://enfermeriaparaelcambio.files.wordpress.com/2008/10/manual_parte1.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Manual de Enfermería Parte 1</span></a>
+                    <a href="https://es.scribd.com/doc/16757236/MANUAL-DE-PROCEDIMIENTOS-DE-ENFERMERIA-EN-LA-UNIDAD-DE-CUIDADOS-INTENSIVOS" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-book"></i><span>Manual de Procedimientos de Enfermeria en La Unidad de Cuidados Intensivos</span></a>
+                    <a href="http://www.dof.gob.mx/nota_detalle.php%3Fcodigo%3D5275587%26fecha%3D26/10/2012" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Diario Oficial de la Federación</span></a>
+                    <a href="https://bioetica.com.mx/?option=com_content&amp;task=blogcategory&amp;id=55&amp;Itemid=122" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Bioética – Institución formada por profesionistas inaugurada en mayo de 1998</span></a>
+                    <a href="https://tanatologia.org/glosario-general/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Glosario General - Tanatologia</span></a>
+                    <a href="http://www.dof.gob.mx/normasOficiales/4875/salud3a14_C/salud3a14_C.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>salud3a14_C</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5375019&amp;fecha=09/12/2014" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5375019 (09/12/2014)</span></a>
+                    <a href="http://csg.gob.mx/contenidos/certificacion/sinaceam.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Consejo de Salubridad General</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Conducta Profesional y Legislación en Salud</h3>
+                <div class="links-grid">
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="http://www.salud.gob.mx/unidades/cdi/legis/lgs/LEY_GENERAL_DE_SALUD.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>LEY GENERAL DE SALUD</span></a>
+                    <a href="http://www.diputados.gob.mx/LeyesBiblio/pdf_mov/Constitucion_Politica.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Constitución Política de los Estados Unidos Mexicanos</span></a>
+                    <a href="https://www.gob.mx/salud/en/documentos/normas-oficiales-mexicanas-9705" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>Normas Oficiales Mexicanas</span></a>
+                    <a href="https://www.gob.mx/sep/acciones-y-programas/direccion-general-de-profesiones-certificacion-profesional" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Dirección General de Profesiones. Certificación Profesional</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= SEM5 ================= -->
+        <div id="sem5" class="tab-content">
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería Materno – Infantil y Obstetricia</h3>
+                <div class="links-grid">
+                    <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5432289&amp;fecha=07/04/2016" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5432289 (07/04/2016)</span></a>
+                    <a href="https://www.gob.mx/cms/uploads/attachment/file/53633/NOM-005-SSA2-1993.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>NOM-005-SSA2-1993 Servicios de Planificación Familiar</span></a>
+                    <a href="https://www.gob.mx/salud/documentos/programa-de-accion-especifico-planificacion-familiar-y-anticoncepcion-2013-2018" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Programa de Acción Específico Planificación Familiar y Anticoncepción 2013 - 2018</span></a>
+                    <a href="https://transparencia.autlan.gob.mx/archivos/transparencia/normas/NormasFederales/nom087_semarnat-Residuos%20Peligrosos.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>NOM-087 Residuos Peligrosos (PDF)</span></a>
+                    <a href="http://www.inr.gob.mx/Descargas/bioSeguridad/info/NOM-087-ECOL-SSA1-2002.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>087ECOLSSA.PDF</span></a>
+                    <a href="http://educads.salud.gob.mx/sitio/vRes/index.php" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Educación en Salud (Secretaría de Salud)</span></a>
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería Pediátrica</h3>
+                <div class="links-grid">
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="http://www.inr.gob.mx/Descargas/bioSeguridad/info/NOM-087-ECOL-SSA1-2002.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>087ECOLSSA.PDF</span></a>
+                    <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5417151&amp;fecha=25/11/2015" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5417151 (25/11/2015)</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5270654&amp;fecha=28/09/2012" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5270654 (28/09/2012)</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5324923&amp;fecha=09/12/2013" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5324923 (09/12/2013)</span></a>
+                    <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5349816&amp;fecha=24/06/2014" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5349816 (24/06/2014)</span></a>
+                    <a href="https://transparencia.autlan.gob.mx/archivos/transparencia/normas/NormasFederales/nom087_semarnat-Residuos%20Peligrosos.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>NOM-087 Residuos Peligrosos (PDF)</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= SEMAVANZADO ================= -->
+        <div id="semAvanzado" class="tab-content">
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería Oncológica</h3>
+                <div class="links-grid">
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5194157&amp;fecha=09/06/2011" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5194157 (09/06/2011)</span></a>
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="https://www.cdc.gov/spanish/cancer/dcpc/prevention/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-heartbeat"></i><span>Cómo prevenir el cáncer o detectarlo tempranamente</span></a>
+                    <a href="https://www.cdc.gov/spanish/cancer/prostate/basic_info/screening.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-heartbeat"></i><span>¿En qué consiste la prueba de detección de cáncer de próstata?</span></a>
+                    <a href="https://www.redalyc.org/articulo.oa?id=10639508" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Regulación del ciclo celular y desarrollo de cancer: perspectivas terapéuticas</span></a>
+                    <a href="http://www.salud.gob.mx/unidades/cdi/nom/m014ssa24.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>NOM-014-SSA2-1994 Prevención y Control del Cáncer</span></a>
+                    <a href="https://www.cancer.gov/espanol/tipos" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-heartbeat"></i><span>Tipos de cáncer - Instituto Nacional del Cáncer</span></a>
+                    <a href="http://www.dof.gob.mx/nota_detalle.php?codigo=5268977&amp;fecha=18/09/2012" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5268977 (18/09/2012)</span></a>
+                    <a href="https://www.monografias.com/trabajos15/enfermeria-sida/enfermeria-sida.shtml" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Enfermería y Necesidades Emocionales del Paciente (Monografías)</span></a>
+                    <a href="https://books.google.com.mx/books?id=BBQlAgAAQBAJ&amp;pg=PA27&amp;dq=libros+de+enfermeria+en+oncologia&amp;hl=es-419&amp;sa=X&amp;ei=xk7AVKLjEpW2yATH8YKwDA&amp;ved=0CEcQ6AEwBw" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-book"></i><span>Enfermería en Cuidados Paliativos (Google Libros)</span></a>
+                    <a href="https://books.google.com.mx/books?id=YD8OR_WZufgC&amp;printsec=frontcover&amp;dq=libros+de+enfermeria+en+oncologia&amp;hl=es-419&amp;sa=X&amp;ei=xk7AVKLjEpW2yATH8YKwDA&amp;ved=0CCEQ6AEwAA" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-book"></i><span>Cuidados Enfermeros al Paciente Oncológico (Google Libros)</span></a>
+                    <a href="https://biblioteca.conalep.edu.mx/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Biblioteca Digital CONALEP Central</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Comunicación Especializada en Inglés</h3>
+                <div class="links-grid">
+                    <a href="https://www.shertonenglish.com/es/gramatica/condicionales/tipo-2" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Condicionales en Inglés - Second Conditional - Type II</span></a>
+                    <a href="https://dictionary.cambridge.org/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Cambridge Dictionary &amp; Grammar</span></a>
+                    <a href="https://www.grammar-quizzes.com/19-2.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Cause / Effect</span></a>
+                    <a href="http://www.englishpage.com/modals/must.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Must</span></a>
+                    <a href="http://www.englishpage.com/modals/modalforms.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Modal Forms</span></a>
+                    <a href="https://www.english-at-home.com/grammar/linking-words/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Linking Words – english-at-home.com</span></a>
+                    <a href="https://www.eltbase.com/vtr_refs.php?id=148" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>English grammar - Linkers - contrast - ESL activities</span></a>
+                    <a href="https://www.thebalancecareers.com/curriculum-vitae-cv-template-2060353" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Curriculum Vitae (CV) Template</span></a>
+                    <a href="http://www.ompersonal.com.ar/omgrammar/vozpasiva.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>OM GRAMMAR-Gramática Inglesa Gratuita en Espanol</span></a>
+                    <a href="https://www.ego4u.com/en/cram-up/grammar/passive" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Learn English - Passive Voice - English Grammar</span></a>
+                    <a href="https://www.writeexpress.com/complaint.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>57 Free Example Complaint Letters • WriteExpress</span></a>
+                    <a href="https://www.elllo.org/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>ELLLO - English Listening Lesson Library Online</span></a>
+                    <a href="https://arts.uottawa.ca/writingcentre/en/hypergrammar" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>HyperGrammar</span></a>
+                    <a href="https://repository.duke.edu/dc/adaccess" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Ad*Access / Digital Collections / Duke Digital Repository</span></a>
+                    <a href="https://www.rong-chang.com/listen.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>ESL - Listening and Speaking</span></a>
+                    <a href="https://www.onestopenglish.com/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Home</span></a>
+                    <a href="https://www.wordreference.com/es" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>WordReference Dictionary &amp; Translation</span></a>
+                    <a href="https://www.english-zone.com/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>English-Zone.Com – Where learning is fun</span></a>
+                    <a href="http://esl4free.blogspot.com/2008/07/downloadable-mp3-esl-listening.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>ESL - Free Material For Teachers</span></a>
+                    <a href="https://www.mansioningles.com/gram55.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Gramática Inglesa. Verbos. Voz Pasiva en inglés</span></a>
+                    <a href="http://www.aprenderinglesfacil.es/2008/09/ejercicios-oraciones-condicionales_04.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Ejercicios: Oraciones Condicionales – Segundo Tipo (2)</span></a>
+                    <a href="https://www.curso-ingles.com/aprender/cursos/nivel-avanzado/conditionals/conditional-sentences" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Lección de inglés: Conditional Sentences</span></a>
+                    <a href="https://www.mansioningles.com/gram62.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Gramática inglesa. Verbos. Modal Verbs en inglés</span></a>
+                    <a href="https://essayservice.com/non-stop-english-essay-writer" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Essay Writer</span></a>
+                    <a href="https://www.rrhh-web.com/curriculuminglesycarta.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Curriculum vitae en ingles, cv u hoja de vida como hacer ejemplo y modelo</span></a>
+                    <a href="https://www.englishspanishlink.com/deluxewriter/letterlayoutenglet.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Estilo y formato de una carta en inglés</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería Geriátrica</h3>
+                <div class="links-grid">
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="https://docplayer.es/152214-Especial-adulto-alimentarse-bien-para-sentirse-mejor.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>ESPECIAL ADULTO. Alimentarse bien. para sentirse mejor - PDF Free Download</span></a>
+                    <a href="https://www.argentina.gob.ar/desarrollosocial" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Ministerio de Desarrollo Social</span></a>
+                    <a href="http://dof.gob.mx/nota_detalle.php?codigo=5375019&amp;fecha=09/12/2014" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-balance-scale"></i><span>DOF - Nota 5375019 (09/12/2014)</span></a>
+                    <a href="https://www.segg.es/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Sociedad Española de Geriatría y Gerontología</span></a>
+                    <a href="https://www.medigraphic.com/pdfs/facmed/un-2017/un173h.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>un173h.pdf</span></a>
+                    <a href="https://biblioteca.conalep.edu.mx/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Biblioteca Digital CONALEP Central</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Gestión de los Servicios de Enfermería</h3>
+                <div class="links-grid">
+                    <a href="https://biblioteca.conalep.edu.mx/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Biblioteca Digital CONALEP Central</span></a>
+                    <a href="https://dgces.salud.gob.mx/INDICASII/doctos/sist_indicas_sicalidad.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>sist_indicas_sicalidad</span></a>
+                    <a href="https://encolombia.com/medicina/revistas-medicas/enfermeria/ve-93/Enfermeria9306LaCalidad/?xmbdt=d" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>CALIDAD DE LOS SERVICIOS DE ENFERMERÍA, REVISTAS MÉDICAS, SALUD</span></a>
+                    <a href="http://gestion-calidad.com/wp-content/uploads/2016/09/Sistema-gestion-calidad.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Microsoft PowerPoint - ISO 9001 2008 completa</span></a>
+                    <a href="https://www.gob.mx/salud" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Secretaría de Salud</span></a>
+                    <a href="http://gabriela265.blogspot.com/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Zona Gaby</span></a>
+                    <a href="http://www.calidad.salud.gob.mx/site/calidad/instruccion/instruccion_206.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>instruccion_206.pdf</span></a>
+                    <a href="https://dgces.salud.gob.mx/INDICASII/index2.php" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>:: DGCES</span></a>
+                    <a href="http://www.cpe.salud.gob.mx/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>CPE</span></a>
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="http://www.csg.gob.mx/descargas/pdf/certificacion-establecimientos/modelo_de_seguridad/hospitales/Estandares-Hospitales-Edicion2018.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Estandares-Hospitales-Edicion2018.pdf</span></a>
+                    <a href="https://saludpublica.mx/index.php/spm/article/view/8890/11387" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Vista de Sistema Nacional de Indicadores de Calidad en Salud (Indicas)</span></a>
+                    <a href="https://www.nueva-iso-9001-2015.com/4-4-sistema-de-gestion-de-la-calidad/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>4.4 Sistema de Gestión de la Calidad - ISO 9001:2015</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Enfermería en Urgencias</h3>
+                <div class="links-grid">
+                    <a href="https://biblioteca.conalep.edu.mx/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Biblioteca Digital CONALEP Central</span></a>
+                    <a href="http://www.enfermeriadeurgencias.com/ciber/PRIMERA_EPOCA/2007/octubre/vendajes.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-heartbeat"></i><span>Pagina nueva 1</span></a>
+                    <a href="http://www.heart.org/idc/groups/heart-public/@wcm/@ecc/documents/downloadable/ucm_317346.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>ucm_317346.pdf</span></a>
+                    <a href="http://www.medicosecuador.com/TraumaCD/resume/conferencias/20.htm" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>ATENCIÓN PREHOSPITALARIA INTERVENCIÓN OPORTUNA</span></a>
+                    <a href="https://www.riojasalud.es/servicios/urgencias/articulos/urgencias-y-emergencias" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-heartbeat"></i><span>Urgencias y emergencias - Rioja Salud</span></a>
+                    <a href="https://es.slideshare.net/thadeusw/algoritmos-de-reanimacion-cardiopulmonar-basica-y-avanzada?related=1" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-powerpoint"></i><span>Algoritmos de Reanimación Cardiopulmonar (Slideshare)</span></a>
+                    <a href="http://formacionenemergencias.blogspot.com/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>URGENCIAS Y EMERGENCIAS EXTRAHOSPITALARIAS</span></a>
+                    <a href="http://formacionenemergencias.blogspot.com/2014/06/cinematica-del-trauma.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Cinemática del trauma</span></a>
+                    <a href="http://proteccioncivil.sfpcoahuila.gob.mx/admin/uploads/Documentos/modulo11/NORMA_OFICIAL_MEXICANA_002_2010.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Microsoft Word - NORMA_OFICIAL_MEXICANA_NOM 002_2010_GRADO_DE_RIESGO</span></a>
+                    <a href="https://sites.google.com/site/floresriveramfurgenciasii/rcp-y-ace-guias-aha-2010-en-espanol-1" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-heartbeat"></i><span>RCP y ACE Guías AHA 2010 en español - URGENCIAS II</span></a>
+                    <a href="https://www.academia.edu/12753618/La_hora_dorada_del_politraumatizado" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>(PDF) La hora dorada del politraumatizado</span></a>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <h3 class="modulo-title"><i class="fas fa-graduation-cap"></i> Intervención en Problemas de Adicciones</h3>
+                <div class="links-grid">
+                    <a href="https://biblioteca.conalep.edu.mx/" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Biblioteca Digital CONALEP Central</span></a>
+                    <a href="http://www.cij.gob.mx/Publicaciones/material_tratamiento.html" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Centros de Integración Juvenil</span></a>
+                    <a href="http://www.conadic.salud.gob.mx/pdfs/lineamientos.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>lineamientos.pdf</span></a>
+                    <a href="http://www.conadic.salud.gob.mx/pdfs/programas/PAE2007.2012_Adicciones.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>adicciones.indd</span></a>
+                    <a href="http://www.conadic.salud.gob.mx/pdfs/publicaciones/guiajuv.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>Guía CONADIC para Prevención de Adicciones (PDF)</span></a>
+                    <a href="https://www.drugabuse.gov/es/publicaciones/como-prevenir-el-uso-de-drogas/capitulo-1-los-factores-de-riesgo-y-los-factores-de-proteccion/cuales-son-los-fa" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>¿Cuáles son los factores de riesgo y cuáles son los factores de protección?</span></a>
+                    <a href="https://www.gob.mx/conalep/acciones-y-programas/red-academica-27470" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-globe"></i><span>Red Académica CONALEP</span></a>
+                    <a href="https://www.gob.mx/asa/acciones-y-programas/codigo-de-etica-de-los-servidores-publicos" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-external-link-alt"></i><span>Código de Ética de las Personas Servidoras Públicas del Gobierno Federal</span></a>
+                    <a href="https://www.cndh.org.mx/sites/default/files/doc/Programas/VIH/Leyes%20y%20normas%20y%20reglamentos/Norma%20Oficial%20Mexicana/NOM-028-SSA2-2009%20Tratamiento%20y%20control%20de%20adicciones.pdf" target="_blank" rel="noopener" class="resource-link-item"><i class="fas fa-file-pdf"></i><span>NOM-028-SSA2-2009 (Tratamiento y Control de Adicciones)</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="../INICIO.htm" class="btn-amarillo" style="display: inline-flex; align-items: center; gap: 8px; background: var(--brand-primary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 14px;">
+                <i class="fas fa-arrow-left"></i> Regresar al Inicio
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer Corporativo -->
+    <footer class="footer-institucional" style="margin-top: 60px;">
+        <p><strong>CONALEP Plantel Temoaya 080</strong> &copy; 2026. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script de Pestañas -->
+    <script>
+        function cambiarSemestre(semId, evento) {
+            const contenidos = document.querySelectorAll('.tab-content');
+            contenidos.forEach(c => c.classList.remove('active'));
+
+            const botones = document.querySelectorAll('.tab-btn');
+            botones.forEach(b => b.classList.remove('active'));
+
+            document.getElementById(semId).classList.add('active');
+            evento.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
