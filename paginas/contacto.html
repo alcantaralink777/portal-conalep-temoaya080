@@ -112,30 +112,30 @@
                 </div>
             </div>
 
-            <!-- Columna de Formulario -->
+            <!-- Columna de Formulario (Conectado a Formspree) -->
             <div class="contact-card">
                 <h2 style="font-family: 'Space Grotesk', sans-serif; color: var(--brand-primary); font-size: 24px; margin-bottom: 15px;">Envíanos un Mensaje</h2>
                 <p style="color: var(--text-body); font-size: 15px; margin-bottom: 25px; line-height: 1.6;">Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
                 
-                <form onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');">
+                <form action="https://formspree.io/f/xnppwlpv" method="POST">
                     <div style="margin-bottom: 20px;">
                         <label style="display: block; font-size: 14px; font-weight: 600; color: var(--text-heading); margin-bottom: 8px;">Nombre Completo</label>
-                        <input type="text" class="form-control" placeholder="Ej. Juan Pérez García" required>
+                        <input type="text" name="nombre" class="form-control" placeholder="Ej. Juan Pérez García" required>
                     </div>
 
                     <div style="margin-bottom: 20px;">
                         <label style="display: block; font-size: 14px; font-weight: 600; color: var(--text-heading); margin-bottom: 8px;">Correo Electrónico Institucional o Personal</label>
-                        <input type="email" class="form-control" placeholder="correo@ejemplo.com" required>
+                        <input type="email" name="correo" class="form-control" placeholder="correo@ejemplo.com" required>
                     </div>
 
                     <div style="margin-bottom: 20px;">
                         <label style="display: block; font-size: 14px; font-weight: 600; color: var(--text-heading); margin-bottom: 8px;">Asunto o Motivo</label>
-                        <input type="text" class="form-control" placeholder="Ej. Duda sobre reposición de credencial" required>
+                        <input type="text" name="asunto" class="form-control" placeholder="Ej. Duda sobre reposición de credencial" required>
                     </div>
 
                     <div style="margin-bottom: 20px;">
                         <label style="display: block; font-size: 14px; font-weight: 600; color: var(--text-heading); margin-bottom: 8px;">Mensaje</label>
-                        <textarea class="form-control" rows="4" placeholder="Escribe tu mensaje detalladamente..." required></textarea>
+                        <textarea name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje detalladamente..." required></textarea>
                     </div>
 
                     <button type="submit" style="background: var(--brand-primary); color: var(--brand-accent); border: none; width: 100%; padding: 15px; border-radius: 12px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px; cursor: pointer; transition: var(--transition-smooth); box-shadow: var(--shadow-md);">
