@@ -731,21 +731,49 @@ body {
 }
 
 /* ==========================================================
-   FORZAR ACOMODO EN CELULARES (MÓVILES)
+   CORRECCIÓN DEFINITIVA PARA MÓVILES Y CELULARES
    ========================================================== */
 @media (max-width: 768px) {
-    /* 1. Desactivar el posicionamiento fijo de la PC en el menú */
+    /* 1. Evitar que el menú flote y tape cosas: pasa a flujo normal */
     .navbar-pro {
         position: relative !important;
         top: 0 !important;
         left: auto !important;
         transform: none !important;
         width: 100% !important;
-        margin: 0 auto 15px auto !important;
-        border-radius: 0 0 20px 20px !important;
+        margin: 10px auto 15px auto !important;
+        border-radius: 16px !important;
     }
 
-    /* 2. Sacar por completo los iconos flotantes de arriba y ponerlos abajo o en línea */
+    /* 2. Acomodar el contenedor y apilar el menú en filas ordenadas */
+    .nav-container {
+        flex-direction: column !important;
+        padding: 12px !important;
+        gap: 12px !important;
+        align-items: center !important;
+    }
+
+    .nav-brand {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 6px !important;
+        width: 100% !important;
+    }
+
+    .nav-link {
+        padding: 8px 12px !important;
+        font-size: 13px !important;
+        border-radius: 8px !important;
+        text-align: center !important;
+    }
+
+    /* 3. Mover los iconos flotantes de redes sociales completamente abajo del menú */
     .social-icons-float {
         position: relative !important;
         top: auto !important;
@@ -759,5 +787,18 @@ body {
         background: rgba(255, 255, 255, 0.9) !important;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
         z-index: 10 !important;
+    }
+
+    /* 4. Ajustar tarjetas y espacios generales en móvil */
+    .contenedor-tarjetas, 
+    .carreras-grid, 
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 12px !important;
+    }
+
+    .tarjeta-servicio {
+        grid-column: span 12 !important;
+        padding: 20px !important;
     }
 }
