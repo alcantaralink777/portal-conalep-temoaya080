@@ -734,53 +734,61 @@ body {
    CORRECCIÓN RESPONSIVA DEFINITIVA PARA CELULARES
    ========================================================== */
 @media (max-width: 768px) {
-    /* Navbar adaptable en móviles */
+    /* 1. Asegurar espacio para que el menú superior no se traslape */
+    body {
+        padding-top: 10px;
+    }
+
     .navbar-pro {
-        position: fixed;
-        top: 10px;
-        width: calc(100% - 16px);
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 16px;
+        position: relative; /* Cambia de fixed a relative en móviles para que fluya con la página */
+        top: 0;
+        width: 100%;
+        left: 0;
+        transform: none;
+        border-radius: 0 0 20px 20px;
+        margin-bottom: 15px;
     }
 
     .nav-container {
         flex-direction: column;
-        padding: 10px 14px;
-        gap: 8px;
-    }
-
-    .nav-brand {
-        width: 100%;
-        justify-content: center;
+        padding: 12px;
+        gap: 10px;
     }
 
     .nav-menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 4px;
-        width: 100%;
+        gap: 6px;
     }
 
     .nav-link {
-        padding: 6px 10px;
-        font-size: 12px;
-        border-radius: 8px;
+        padding: 6px 12px;
+        font-size: 13px;
     }
 
-    /* Redes sociales flotantes abajo o compactas para que no estorben */
+    /* 2. Mover los iconos flotantes para que NO estorben arriba */
     .social-icons-float {
-        position: static;
+        position: static !important; /* Desactiva la posición fija de la PC */
         flex-direction: row;
         justify-content: center;
-        transform: none;
-        margin: 15px auto;
+        transform: none !important;
+        right: auto;
+        top: auto;
+        margin: 20px auto;
         width: fit-content;
+        background: rgba(255, 255, 255, 0.9);
         box-shadow: var(--shadow-sm);
     }
 
-    /* Tarjetas y contenedores a una sola columna */
+    /* 3. Reajustar márgenes de la barra de estado y tarjetas en móvil */
+    .live-status-bar {
+        margin: 15px 12px !important;
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
+
     .contenedor-tarjetas, 
     .carreras-grid, 
     .contact-grid {
@@ -790,11 +798,11 @@ body {
 
     .tarjeta-servicio {
         grid-column: span 12 !important;
-        padding: 20px;
+        padding: 24px;
     }
 
     .page-wrapper, .library-container, .carreras-wrapper, .contact-container {
-        margin: 110px auto 30px auto;
+        margin: 20px auto;
         padding: 0 12px;
     }
 }
