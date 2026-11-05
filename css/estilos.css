@@ -731,78 +731,33 @@ body {
 }
 
 /* ==========================================================
-   CORRECCIÓN RESPONSIVA DEFINITIVA PARA CELULARES
+   FORZAR ACOMODO EN CELULARES (MÓVILES)
    ========================================================== */
 @media (max-width: 768px) {
-    /* 1. Asegurar espacio para que el menú superior no se traslape */
-    body {
-        padding-top: 10px;
-    }
-
+    /* 1. Desactivar el posicionamiento fijo de la PC en el menú */
     .navbar-pro {
-        position: relative; /* Cambia de fixed a relative en móviles para que fluya con la página */
-        top: 0;
-        width: 100%;
-        left: 0;
-        transform: none;
-        border-radius: 0 0 20px 20px;
-        margin-bottom: 15px;
-    }
-
-    .nav-container {
-        flex-direction: column;
-        padding: 12px;
-        gap: 10px;
-    }
-
-    .nav-menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 6px;
-    }
-
-    .nav-link {
-        padding: 6px 12px;
-        font-size: 13px;
-    }
-
-    /* 2. Mover los iconos flotantes para que NO estorben arriba */
-    .social-icons-float {
-        position: static !important; /* Desactiva la posición fija de la PC */
-        flex-direction: row;
-        justify-content: center;
+        position: relative !important;
+        top: 0 !important;
+        left: auto !important;
         transform: none !important;
-        right: auto;
-        top: auto;
-        margin: 20px auto;
-        width: fit-content;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: var(--shadow-sm);
+        width: 100% !important;
+        margin: 0 auto 15px auto !important;
+        border-radius: 0 0 20px 20px !important;
     }
 
-    /* 3. Reajustar márgenes de la barra de estado y tarjetas en móvil */
-    .live-status-bar {
-        margin: 15px 12px !important;
-        flex-direction: column;
-        text-align: center;
-        gap: 6px;
-    }
-
-    .contenedor-tarjetas, 
-    .carreras-grid, 
-    .contact-grid {
-        grid-template-columns: 1fr !important;
-        padding: 0 12px;
-    }
-
-    .tarjeta-servicio {
-        grid-column: span 12 !important;
-        padding: 24px;
-    }
-
-    .page-wrapper, .library-container, .carreras-wrapper, .contact-container {
-        margin: 20px auto;
-        padding: 0 12px;
+    /* 2. Sacar por completo los iconos flotantes de arriba y ponerlos abajo o en línea */
+    .social-icons-float {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        transform: none !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        margin: 15px auto !important;
+        width: fit-content !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+        z-index: 10 !important;
     }
 }
